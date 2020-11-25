@@ -20,8 +20,6 @@ async def on_command_error(ctx, error):
 async def じゃんけん(ctx):
     await ctx.send('pong')
 
-# 自分のBotのアクセストークンに置き換えてください
-TOKEN = os.environ['DISCORD_BOT_TOKEN']
 arr = ['ぐー:punch:', 'ちょき:v:', 'ぱー:hand_splayed:']
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
