@@ -22,8 +22,8 @@ async def ルール(ctx):
 @bot.command()
 async def janken(ctx):
     
-    await ctx.send(ctx.author+" は「"+random.choice(arr)+"」を出しました。")
-
+    await ctx.send(ctx.author)
+    await ctx.send(" は「"+random.choice(arr)+"」を出しました。")
 # arr = ['ぐー:punch:', 'ちょき:v:', 'ぱー:hand_splayed:']
 # # 接続に必要なオブジェクトを生成
 # client = discord.Client()
