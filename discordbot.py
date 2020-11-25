@@ -15,10 +15,14 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
+@bot.command()
+async def ルール(ctx):
+    await ctx.send("「/janken」と入力するとランダムで「ぐー・ちょき・ぱー」を出します。")
 
 @bot.command()
 async def janken(ctx):
-    await ctx.send("「"+random.choice(arr)+"」を出しました。")
+    
+    await ctx.send(ctx.author+" は「"+random.choice(arr)+"」を出しました。")
 
 # arr = ['ぐー:punch:', 'ちょき:v:', 'ぱー:hand_splayed:']
 # # 接続に必要なオブジェクトを生成
