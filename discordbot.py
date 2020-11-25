@@ -17,7 +17,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def じゃんけん(ctx):
+async def janken(ctx):
     await ctx.send("「"+random.choice(arr)+"」を出しました。")
 
 # arr = ['ぐー:punch:', 'ちょき:v:', 'ぱー:hand_splayed:']
