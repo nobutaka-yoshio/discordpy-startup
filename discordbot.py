@@ -26,12 +26,6 @@ arr = ['ぐー:punch:', 'ちょき:v:', 'ぱー:hand_splayed:']
 client = discord.Client()
 
 
-# 起動時に動作する処理
-@client.event
-async def on_ready():
-    # 起動したらターミナルにログイン通知が表示される
-    print('ログインしました')
-
 # メッセージ受信時に動作する処理
 @client.event
 async def on_message(message):
