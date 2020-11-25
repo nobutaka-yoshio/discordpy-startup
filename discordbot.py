@@ -3,6 +3,7 @@ import os
 import traceback
 import discord
 import random
+import asyncio
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -16,7 +17,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def ping(ctx):
+async def じゃんけん(ctx):
     await ctx.send('pong')
 
 # 自分のBotのアクセストークンに置き換えてください
